@@ -1,0 +1,21 @@
+export const glossaryData: Record<string, string> = {
+  let: "Palavra-chave para declarar constantes em Swift. O valor atribuído inicialmente nunca poderá ser alterado.",
+  var: "Palavra-chave para declarar variáveis em Swift. O valor associado pode ser alterado a qualquer momento ao longo da execução.",
+  multithread: "Ambiente onde várias 'threads' de processamento rodam concorrentemente. Em Swift, descuidos neste nível resultam em chamados Data Races, onde estados são adulterados.",
+  thread: "Linha de execução em paralelo. O Swift agora gerencia isso com segurança sob as cascas usando async/await.",
+  optional: "Um wrapper em Swift para indicar ausência viável (nil). Extremamente eficaz na prevenção orgânica do nulo em tempo de compilação.",
+  optionals: "Tipos em Swift que indicam que a ausência de valor ('nil') é permitida. Desempacotamento seguro é exigido do programador antes do acesso.",
+  nil: "Aplica à variável uma classificação explícita de ausência. Ao contrário de 'null' de muitas formas no Java ou JavaScript, exige validação prévia ao manuseio.",
+  struct: "Tipo focado em estrutura de valores ('Value Type'). Qualquer repasse da sua referência pelo app cria uma cópia inteiramente autônoma e segura.",
+  class: "Elemento de alocação por referência ('Reference Type'). Diversas extremidades do código compartilharão instâncias unificadas consumindo recursos de forma comum.",
+  classes: "Formas de tipificar e consolidar entidades centralizadas ('Reference Types'). Sujeitas fortemente a controle ARC de memória.",
+  mvvm: "Arquitetura que segmenta componentes. Regras de exibição encapsuladas em ViewModels protegem a View de gerenciar dados nativos (Models).",
+  async: "Sufixo indicador das rotinas sob contexto assíncrono. Sua thread primária ficará destravada aguardando sua completude sem engasgar o app.",
+  await: "Ponto-chave da pausa de rotina. Adverte que o avanço subsequente está condicionado à finalização da tarefa recém-ativada.",
+  actor: "Reference Type similar às 'Classes', entretanto blindado organicamente na contenção de mutações simultâneas de múltiplas threads (isocronismo rigorosamente serial).",
+  arc: "Sigla de Automatic Reference Counting. Colecionador de lixo automático invisível da linguagem responsável por erradicar objetos da memória apenas sem rastros operacionais de referenciamento forte.",
+  "retain cycle": "Falha na modelagem de propriedades onde entidade A captura B e vice-versa, neutralizando o expurgo (ARC) e inflando a memória do dispositivo indefinidademente.",
+  "retain cycles": "Conectivos circulares estritos (Strong) entre escopos mantendo dependências atreladas, bloqueando limpezas em RAM. Frequentemente sanados com uso de 'weak'.",
+  weak: "Indicador mitigador na criação referencial de escopo em classes; ao assinar como fraco ('weak'), omite contabilização pelo ARC preservando fluidez em destituições iminentes.",
+  unowned: "Conferidor similar a 'weak' mas ignorando optionals. Arriscado, baseia-se em pressuposto de imortalidade intrínseco garantido durante o fluxo do referenciável."
+};

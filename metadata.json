@@ -1,0 +1,8 @@
+{
+  "name": "Aprendendo Swift Lab",
+  "description": "App para aprender swift incluindo as planilhas do curso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
